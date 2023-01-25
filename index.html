@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SkillBox_17</title>
+    <!-- Include Choices CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Листайте вниз</h1>
+        <section class="section checkboxex">
+            <div class="checkboxex__container">
+                <h2 class="checkboxex__header">Категории:</h2>
+                <ul class="checkboxes__list list-reset">
+                    <li class="checkboxex__item">
+                        <label for="check1" class="checkboxex__label">
+                            <input id="check1" type="checkbox" name="checkbox" class="checkboxex__checkbox">
+                            Динозавры
+                            <span></span>
+                        </label>
+                    </li>
+                    <li class="checkboxex__item">
+                        <label for="check2" class="checkboxex__label">
+                            <input id="check2" type="checkbox" name="checkbox" class="checkboxex__checkbox">
+                            Медведи
+                            <span></span>
+                        </label>
+                    </li>
+                    <li class="checkboxex__item">
+                        <label for="check3" class="checkboxex__label">
+                            <input id="check3" type="checkbox" name="checkbox" class="checkboxex__checkbox">
+                            Косули
+                            <span></span>
+                        </label>
+                    </li>
+                    <li class="checkboxex__item">
+                        <label for="check4" class="checkboxex__label">
+                            <input id="check4" type="checkbox" name="checkbox" class="checkboxex__checkbox">
+                            Лисы
+                            <span></span>
+                        </label>
+                    </li>
+                    <li class="checkboxex__item">
+                        <label for="check5" class="checkboxex__label">
+                            <input id="check5" type="checkbox" name="checkbox" class="checkboxex__checkbox">
+                            Волки
+                            <span></span>
+                        </label>
+                    </li>
+                    <li class="checkboxex__item">
+                        <label for="check6" class="checkboxex__label">
+                            <input id="check6" type="checkbox" name="checkbox" class="checkboxex__checkbox">
+                            Олени и лоси
+                            <span></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section selection">
+            <div class="selection__container">
+                <select name="select" id="select" class="selection__select">
+                    <option value="Материалы" class="selection__option">Материалы</option>
+                    <option value="Древесина" class="selection__option">Древесина</option>
+                    <option value="Металл" class="selection__option">Металл</option>
+                    <option value="Камень" class="selection__option">Камень</option>
+                    <option value="Пластик" class="selection__option">Пластик</option>
+                    <option value="Композитный" class="selection__option">Композитный</option>
+                    <option value="Гипс" class="selection__option">Гипс</option>
+                </select>
+            </div>
+        </section>
+        <section class="section">
+            <div id="map" style="width: 460px; height: 460px"></div>
+        </section>
+        <section class="section scroll">
+            <div class="scroll__container" data-simplebar="init">
+                <p class="scroll__text">
+                    Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно положительном
+                    свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими
+                    инстанциями. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция
+                    общественного уклада представляет собой интересный эксперимент проверки глубокомысленных
+                    рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники
+                    технического прогресса освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако
+                    конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что
+                    социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash;
+                    безусловно открывает новые горизонты для первоочередных требований.
+                </p>
+            </div>
+        </section>
+        <section class="section valid">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="valid__form">
+                <label class="valid__label">
+                    <input type="text" name="name" class="valid__input valid__name" placeholder="Имя*"
+                        data-validate-field="name">
+                </label>
+                <label class="valid__label">
+                    <input type="tel" name="tel" class="valid__input valid__tel" placeholder="Телефон*"
+                        data-validate-field="tel" data-validate-rules="phone">
+                </label>
+                <label class="valid__label">
+                    <input type="email" name="mail" class="valid__input valid__mail" placeholder="E-mail*"
+                        data-validate-field="mail">
+                </label>
+                <div class="valid__container">
+                    <button class="valid__btn">Заказать</button>
+                </div>
+            </form>
+        </section>
+        <section class="section tooltips">
+            <div class="tooltips__container">
+                Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления
+                внешнеэкономических политик.
+                <span class="tooltips__tooltip">
+                    <svg tabindex="0" class="tooltips__marker" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                            fill="#BCBCBC" />
+                    </svg>
+                    <span class="tooltips__popup">Глава 2, страница 176</span>
+                </span>
+                
+            </div>
+        </section>
+    </div>
+    <!-- Include Choices JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./inputmask.min.js"></script>
+    <script src="./just-validate.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
